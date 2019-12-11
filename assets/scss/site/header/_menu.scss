@@ -1,0 +1,23 @@
+#page-header .menu-desktop-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+
+    .menu-main-navigation-container {
+        a {
+            font-size: 14px;
+        }
+
+        > ul {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin: auto;
+            list-style: none;
+
+            > li {
+                padding: 20px 15px;
+            }
+        }
+    }
+}

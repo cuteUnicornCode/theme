@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #F7F7F7;
+
+
+    &.admin-bar {
+        min-height: calc(100vh - 46px);
+
+        @media (min-width: 783px) {
+            min-height: calc(100vh - 32px);
+        }
+
+        #master {
+            min-height: calc(100vh - 46px);
+
+            @media (min-width: 783px) {
+                min-height: calc(100vh - 32px);
+            }
+        }
+    }
+}
+
+#master {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#page-wrapper {
+    flex-grow: 1;
+}
